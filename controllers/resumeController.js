@@ -1,4 +1,4 @@
-import Resume from '../models/resumeModel'
+import Resume from '../models/resumeModel.js'
 import fs from 'fs'
 import path from 'path';
 export const createResume = async (req, res) => {
