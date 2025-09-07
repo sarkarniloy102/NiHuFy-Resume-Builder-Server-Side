@@ -27,12 +27,12 @@ app.use(express.json())
 app.use('/api/auth', userRouter)
 
 app.use('/api/resume', resumeRouter)
-app.use("/uploads",
-    express.static(path.join(__dirname), 'uploads'), {
-    setHeaders: (res, _path) => {
-        res.set('Access-Control-Allow-Origin', 'http://localhost:5173/')
-    }
-}
+app.use('/uploads',
+    express.static(path.join(__dirname, 'uploads'), {
+        setHeaders: (res, _path) => {
+            res.set('Access-Control-Allow-Origin', 'http://localhost:5173/')
+        }
+    })
 )
 
 // Routes
