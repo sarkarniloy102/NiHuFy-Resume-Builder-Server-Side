@@ -40,7 +40,6 @@ app.get('/', (req, res) => {
     res.send('NiHuFy Server Side Is Running')
 })
 
-// app.listen(PORT, () => {
-//     console.log(`Server Started on http://localhost:${PORT}`)
-// })
-module.exports = app;
+app.listen(PORT, () => {
+    console.log(`Server Started on http://localhost:${PORT}`)
+})
